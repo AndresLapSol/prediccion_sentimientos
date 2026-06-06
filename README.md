@@ -4,9 +4,9 @@ Proyecto de aprendizaje automático orientado a la **predicción de la emoción 
 
 ## Descripción del problema
 
-El objetivo de este proyecto es construir un modelo capaz de predecir la emoción dominante de cada observación a partir de variables derivadas de puntos faciales. Se trata de un problema de **clasificación multiclase**, ya que cada fila del dataset debe asociarse a una emoción concreta entre varias posibles [web:596][web:648].
+El objetivo de este proyecto es construir un modelo capaz de predecir la emoción dominante de cada observación a partir de variables derivadas de puntos faciales. Se trata de un problema de **clasificación multiclase**, ya que cada fila del dataset debe asociarse a una emoción concreta entre varias posibles.
 
-La motivación principal del proyecto es analizar si ciertas relaciones geométricas entre puntos del rostro contienen información suficiente para discriminar emociones. Para ello, se compararon distintos enfoques de representación de los datos y varios modelos de clasificación supervisada [web:602][web:648].
+La motivación principal del proyecto es analizar si ciertas relaciones geométricas entre puntos del rostro contienen información suficiente para discriminar emociones. Para ello, se compararon distintos enfoques de representación de los datos y varios modelos de clasificación supervisada.
 
 ## Planteamiento inicial
 
@@ -25,10 +25,10 @@ Sobre este nuevo planteamiento, se construyó la versión final del proyecto. Ad
 El flujo de trabajo seguido en el proyecto fue el siguiente:
 
 1. **Carga y revisión del dataset**  
-   Se importó el conjunto de datos y se realizó una inspección inicial para comprender su estructura, tipos de variables y posibles problemas de calidad de datos [web:596][web:648].
+   Se importó el conjunto de datos y se realizó una inspección inicial para comprender su estructura, tipos de variables y posibles problemas de calidad de datos.
 
 2. **Limpieza y preparación de datos**  
-   Se llevó a cabo la conversión de columnas numéricas, el tratamiento de valores nulos y la selección de las variables relevantes para el modelado. Esta fase fue clave para asegurar que la entrada a los modelos fuera consistente y utilizable [web:596][web:648].
+   Se llevó a cabo la conversión de columnas numéricas, el tratamiento de valores nulos y la selección de las variables relevantes para el modelado. Esta fase fue clave para asegurar que la entrada a los modelos fuera consistente y utilizable.
 
 3. **Definición de la variable objetivo**  
    Se generó la variable `emocion_dominante`, que resume en una sola etiqueta la emoción predominante en cada observación. Esta variable fue la base para entrenar los clasificadores.
@@ -37,10 +37,10 @@ El flujo de trabajo seguido en el proyecto fue el siguiente:
    El modelo final trabajó con variables como `GENERO`, `EDAD`, `punto_base` y `punto_comparado`, que se utilizaron como entrada para predecir la emoción dominante.
 
 5. **Preprocesamiento**  
-   Las variables categóricas se transformaron mediante **One Hot Encoding**, mientras que las variables numéricas se mantuvieron sin transformación. Para ello, se utilizó un `ColumnTransformer`, integrado posteriormente dentro de un pipeline, que permite aplicar el mismo flujo de preprocesado y predicción de forma reproducible [web:647][web:603].
+   Las variables categóricas se transformaron mediante **One Hot Encoding**, mientras que las variables numéricas se mantuvieron sin transformación. Para ello, se utilizó un `ColumnTransformer`, integrado posteriormente dentro de un pipeline, que permite aplicar el mismo flujo de preprocesado y predicción de forma reproducible.
 
 6. **División del dataset**  
-   El conjunto de datos se dividió en entrenamiento y prueba mediante `train_test_split`, conservando la proporción de clases entre ambos subconjuntos para poder evaluar los modelos de forma realista [web:648].
+   El conjunto de datos se dividió en entrenamiento y prueba mediante `train_test_split`, conservando la proporción de clases entre ambos subconjuntos para poder evaluar los modelos de forma realista.
 
 7. **Entrenamiento y comparación de modelos**  
    Se entrenaron y compararon cuatro modelos de clasificación:
@@ -49,13 +49,13 @@ El flujo de trabajo seguido en el proyecto fue el siguiente:
    - Random Forest  
    - Gradient Boosting  
 
-   La comparación se realizó a partir de las métricas **Accuracy** y **F1 macro**, ya que no solo interesaba el porcentaje global de aciertos, sino también el equilibrio del rendimiento entre todas las clases [web:596][web:602].
+   La comparación se realizó a partir de las métricas **Accuracy** y **F1 macro**, ya que no solo interesaba el porcentaje global de aciertos, sino también el equilibrio del rendimiento entre todas las clases.
 
 8. **Interpretación de resultados**  
    Además de las métricas numéricas, se incorporaron recursos visuales para interpretar mejor el comportamiento de los modelos, como la **matriz de confusión**, la visualización del **árbol de decisión** y la gráfica de **importancia de variables** del Random Forest.
 
 9. **Exportación del modelo**  
-   Una vez entrenado el modelo final, se exportó para su reutilización posterior. Esto permite volver a cargar el modelo sin necesidad de repetir todo el proceso de entrenamiento, algo especialmente útil en proyectos de machine learning reproducibles [web:648][web:650].
+   Una vez entrenado el modelo final, se exportó para su reutilización posterior. Esto permite volver a cargar el modelo sin necesidad de repetir todo el proceso de entrenamiento, algo especialmente útil en proyectos de machine learning reproducibles.
 
 ## Modelos evaluados
 
@@ -95,7 +95,7 @@ prediccion_sentimientos/
 └── imagenes_resultados/
 ```
 
-La idea es mantener juntos el notebook principal, el modelo exportado, el dataset utilizado en el análisis y las visualizaciones generadas durante el proyecto, siguiendo una estructura clara y fácil de entender en repositorios de machine learning [web:646][web:650].
+La idea es mantener juntos el notebook principal, el modelo exportado, el dataset utilizado en el análisis y las visualizaciones generadas durante el proyecto, siguiendo una estructura clara y fácil de entender en repositorios de machine learning.
 
 ## Cómo ejecutar el proyecto
 
