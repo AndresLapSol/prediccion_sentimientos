@@ -1,6 +1,6 @@
 # prediccion_sentimientos
 
-Proyecto de aprendizaje automático orientado a la **predicción de la emoción dominante** a partir de características faciales. El trabajo se desarrolló en distintas fases, comenzando con un planteamiento inicial basado en diferencias entre puntos faciales y evolucionando posteriormente hacia un enfoque final basado en **proporciones faciales**, que resultó más adecuado para representar la información emocional [web:596][web:602].
+Proyecto de aprendizaje automático orientado a la **predicción de la emoción dominante** a partir de características faciales. El trabajo se desarrolló en distintas fases, comenzando con un planteamiento inicial basado en diferencias entre puntos faciales y evolucionando posteriormente hacia un enfoque final basado en **proporciones faciales**, que resultó más adecuado para representar la información emocional.
 
 ## Descripción del problema
 
