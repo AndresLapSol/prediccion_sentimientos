@@ -89,10 +89,10 @@ La organización del repositorio puede incluir archivos como los siguientes:
 prediccion_sentimientos/
 │
 ├── README.md
-├── notebook.ipynb
+├── proyecto_sentimientos.ipynb
 ├── modelo_emociones.pkl
-├── dataset_sentimientos.csv
-└── imagenes_resultados/
+├── dataset_sentimientos_proporciones.csv
+└── dataset_sentimientos_formato_largo.csv
 ```
 
 La idea es mantener juntos el notebook principal, el modelo exportado, el dataset utilizado en el análisis y las visualizaciones generadas durante el proyecto, siguiendo una estructura clara y fácil de entender en repositorios de machine learning.
@@ -138,5 +138,6 @@ Como posibles mejoras futuras del proyecto, se plantean las siguientes:
 - estudiar otros algoritmos de clasificación que puedan mejorar el rendimiento final.
 
 ## Autor
-
+->Andrés Lapuente Sola
 Proyecto desarrollado como práctica de análisis de datos y clasificación supervisada en Python.
+
