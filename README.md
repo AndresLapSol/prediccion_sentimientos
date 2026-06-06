@@ -138,6 +138,6 @@ Como posibles mejoras futuras del proyecto, se plantean las siguientes:
 - estudiar otros algoritmos de clasificación que puedan mejorar el rendimiento final.
 
 ## Autor
-->Andrés Lapuente Sola
-Proyecto desarrollado como práctica de análisis de datos y clasificación supervisada en Python.
 
+Andrés Lapuente Sola  
+Proyecto desarrollado como práctica de análisis de datos y clasificación supervisada en Python.
